@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./Containers.css";
 
-function Container(){
+function Container({webpage: Webpage}){
   const [isHovered, setIsHovered] = useState(false);
 
     const navBarNames = ["Home", "Projects", "Art", "Skills", "Contact" ];
@@ -32,6 +32,7 @@ function Container(){
 
   //---------------------------------
 
+
     return(
         <>
         <div className="Sidebar"> 
@@ -39,9 +40,10 @@ function Container(){
             navBarNames.map((name, index) => (
               <Wordbox key={index} sName={name} index={index} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
           ))}
-
         </div>
+
         <div className="Mainarea"> 
+          <Webpage/>
         </div>
         </>
     );

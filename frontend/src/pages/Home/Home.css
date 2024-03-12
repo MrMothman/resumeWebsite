@@ -1,5 +1,35 @@
 .Home{
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
+
+.Main{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    background-color: black;
+}
+
+.circle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-size: clamp(3.2rem, 10vw, 7.7rem);
+
+
+    text-align: center;
+    width: 1000px; /* Adjust the size as needed */
+    height: 1000px; /* Adjust the size as needed */
+    border-radius: 50%; /* This creates a circle by setting the border-radius to 50% of the width/height */
+    background-color: white; /* Set the background color */
+}
+
 
