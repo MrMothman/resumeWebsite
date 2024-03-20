@@ -4,7 +4,7 @@ import "./Containers.css";
 function Container({webpage: Webpage}){
   const [isHovered, setIsHovered] = useState(false);
 
-    const navBarNames = ["Home", "Login", "Projects", "Art", "Skills", "Contact" ];
+    const navBarNames = ["Home", "Login", "Projects", "Skills", "Contact" ];
   //---------------------------------
 
   const handleMouseEnter = (id) => {
