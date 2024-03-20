@@ -5,7 +5,7 @@ import {Container} from '../../components/Containers/Containers';
 
 function Home() {
 
-  function test(){
+  function page(){
     return(
       <div className="Main">
         <div className="circle-container">
@@ -24,7 +24,7 @@ function Home() {
   return (
 
     <div className="Home">
-        <Container webpage={test}/>
+        <Container webpage={page}/>
     </div>
 
   );
