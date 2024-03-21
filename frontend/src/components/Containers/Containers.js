@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import "./Containers.css";
 
 function Container({webpage: Webpage}){
@@ -62,7 +63,9 @@ function Wordbox({sName, index, handleMouseEnter, handleMouseLeave}){
     {
       characters.map((char, charIndex) => (
       <div key={charIndex} className="Letterbox">
+        <Link to={`/${sName}`} className="LinkCustom">
         <h1>{char}</h1>
+        </Link>
       </div>
     ))}
       </div>
