@@ -2,4 +2,37 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    background: url(../../assets/moon.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.MainLogin{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    color: white;
+}
+
+.LoginSection{
+    display: flex;
+    background: transparent;
+    align-items: center;
+    flex: 1;
+ }
+
+.LoginForm{
+    margin-left:25%;
+    margin-right: 25%;
+    text-align: center;
+    height: 50%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 5px solid white;
+    flex: 1;
+}
+
+.Explanation{
+    background: transparent;
+    flex: 1;
 }

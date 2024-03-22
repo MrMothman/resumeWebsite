@@ -2,13 +2,14 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    background: url(../../assets/moon.jpg) no-repeat;
+    background-size: 100% 100%;
 }
 
 .Main{
     text-align: center;
     display: flex;
     flex: 1;
-    background-color: black;
 }
 
 .circle-container{
@@ -26,10 +27,13 @@
 
 
     text-align: center;
-    width: 1000px; /* Adjust the size as needed */
-    height: 1000px; /* Adjust the size as needed */
+    width: 800px; /* Adjust the size as needed */
+    height: 800px; /* Adjust the size as needed */
     border-radius: 50%; /* This creates a circle by setting the border-radius to 50% of the width/height */
-    background-color: white; /* Set the background color */
+    border: 5px solid white;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(60px);
 }
 
 

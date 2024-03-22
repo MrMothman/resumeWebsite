@@ -8,14 +8,7 @@ function Home() {
   function page(){
     return(
       <div className="Main">
-        <div className="circle-container">
-          <div className="circle">
-            <h1>Hire </h1>
-            <br/>
-            <h1>Me</h1>
-
-          </div>
-        </div>
+     
         </div>
     )
   }
