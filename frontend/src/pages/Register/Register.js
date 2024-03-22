@@ -1,13 +1,13 @@
 import React from 'react';
-import './Login.css';
+import './Register.css';
 import {Container} from '../../components/Containers/Containers';
 import { useState } from 'react';
 import axios from 'axios';
 
 
-function Login() {
+function Register() {
 
-  const handleFormSubmit = async (event) => {
+  const handleFormRegister = async (event) => {
     event.preventDefault(); // Prevent default form submission behavior
    
     const username = document.getElementById('username').value;
@@ -21,13 +21,13 @@ function Login() {
 
     try {
       // Make a POST request to the login endpoint
-      const response = await axios.post('/api/login', loginData);
-      console.log('Login successful:', response.data);
+      const response = await axios.post('/api/register', loginData);
+      console.log('Registration successful:', response.data);
       
       // Optionally, perform any necessary actions upon successful login
     } catch (error) {
       // Handle error
-      console.error('Login failed:', error.response.data.error);
+      console.error('Registration failed:', error.response.data.error);
       
       // Optionally, display error message to the user
     }
@@ -40,10 +40,10 @@ function Login() {
           <div className = "LoginSection">
             <div className="LoginForm">
               <div className="foramtLogin">
-            <h2>Login </h2>
+            <h2>Register </h2>
             <br /> 
-            {/* Form submition begins here */}
-            <form onSubmit={handleFormSubmit}>
+            {/* Form Registration begins here */}
+            <form onSubmit={handleFormRegister}>
               <div className= "inputBox">
                 <input type="text" id="username" name="username" />
                 <label>Username</label>
@@ -54,10 +54,7 @@ function Login() {
                 <label>Password</label>
               </div>
                 <br />
-                <button type="submit" className="subBut">Login</button>
-                <div className="loginRegister">
-                <p>Don't have an account? <a href="/register" className="regLink">Register</a></p>
-                </div>
+                <button type="submit" className="subBut">Register</button>
             </form>
             </div>
             </div>
@@ -75,11 +72,4 @@ function Login() {
   );
 }
 
-
-
-
-
-
-
-
-export {Login}; 
+export {Register};
